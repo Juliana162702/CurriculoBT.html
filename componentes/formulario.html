@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend id="for">Dados Freelancer</legend>
+
+            <p>
+                <label for="nome">Nome: <span>*</span> </label>
+                <input type="text" id="nome" placeholder="Insira seu nome" required />
+            </p>
+          
+            <p>
+                <label for="sobre">Sobrenome:<span>*</span> </label>
+                <input type="text" id="sobre" placeholder="Insira seu sobrenome" required />
+            </p>
+         
+            <p>
+                <label for="fone">Telefone:<span>*</span> </label>
+                <input type="tel" id="fone" placeholder="(81)98181-8181" required />  
+            </p>
+          
+            <p>
+                <label for="email">E-mail:<span>*</span></label>
+                <input type="email" id="email" style="width: 300px;" placeholder="Insira seu e-mail" required />  
+            </p>
+    
+            <div class="mensag">
+                <label for="msn">Mensagem:<span>*</span></label><br>
+                <textarea id="Msgem" placeholder="Digite aqui sua mensagem" required></textarea>
+            </div> 
+
+            <p>
+                <label for="lg">Língua: <span id="de">*</span></label>
+                <select name="opcao" id="opcoes" required>
+                    <option>Portugues(pt-BR) </option>
+                    <option>França(fr-CA) </option>
+                    <option>Alemanha(de-DE) </option>
+                    <option>Chinês(zh-Hans) </option>
+                    <option>Espanha(es-ES) </option>
+                </select>
+            </p>
+            <p>
+                <label for="file-upload">Carregar Arquivo (PDF, DOC, DOCX, JPEG, PNG): <span>*</span></label>
+                <input type="file" id="file-upload" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png" required>
+            </p>
+
+            <section>
+                <label class="linguagens">As linguagens que você prefere? <br>
+                    <select name="lingua" required multiple>
+                        <option value="j">Java</option>
+                        <option value="c++">C++</option>
+                        <option value="c">C</option>
+                        <option value="P">PHP</option>
+                        <option value="js">Java Script</option>
+                        <option value="py">Python</option>
+                        <option value="f">Flutter</option>
+                    </select>
+                </label>    
+            </section>    
+
+            <p>  
+                <label> Banco de Dados </label> <br> 
+                Postgresql <input type="checkbox" name="opcoes" value="pos"/> <b>|</b>
+                MongoDB <input type="checkbox" name="opcoes" value="Mongo"/><b>|</b>
+                N/A <input type="checkbox" name="opcoes" value="na"/> <b>|</b>
+                Outra <input type="checkbox" name="opcoes" value="outro"/>     
+            </p>
+    
+            <p>
+                <label> Turno para Reuniões <samp>*</samp></label>
+                <input type="checkbox"> Manhã <b>|</b>
+                <input type="checkbox"> Tarde <b>|</b>
+                <input type="checkbox"> Noite <b>|</b>  
+            </p>
+
+            <p>
+                <label> Horário Sugerido</label>
+                <input type="time"> 
+            </p>
+
+            <p>
+                <label> Data prevista</label><br>
+                <label>Entrega <samp>*</samp></label>
+                <input id="data" type="date" required>
+            </p>
+
+            <button type="button" class="salvar">Salvar</button>
+            <button type="button" class="enviar">Enviar</button>
+            <button type="button" class="limpar">Limpar</button>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
